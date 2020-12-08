@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=5" />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <title>Devchallenges</title>
+
+    <style>
+
+      * 
+      { 
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #FAFAFA;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 78px;
+        margin-left: 12px;
+      }
+      
+      .header-text h1 {
+        font-family: "PT Serif", sans-serif; 
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+      }
+
+      .header-paragraph h6
+      {
+        margin-top: 38px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+      }
+
+      .header-paragraph p {
+        width: 333px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+      }
+
+      .wrapper
+      {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top: 2em;
+      }
+
+      .card
+      {
+        display: grid;
+        grid-template-columns: 2fr 0.4fr;
+        margin-left: 2em;
+      }
+
+      .card img
+      {
+        width: 75%;
+      }
+
+      .card:nth-child(even)
+      {
+        margin-top: 3.5em;
+      }
+
+      .p-name
+      {
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        
+      }
+
+      .role
+      {
+        font-family: PT Serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+        writing-mode: vertical-rl;
+      }
+
+      @media screen and (min-width: 768px)
+      {
+        .header 
+        {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 78px;
+          margin-left: 12px;
+        }
+        .wrapper
+        {
+          grid-template-columns: repeat(3, 1fr); 
+        }
+
+        .card
+        {
+          margin: 0 6em 0 6em;
+        }
+
+        .card img
+        {
+          width: 98%;
+        }
+
+        .card:nth-child(2), .card:nth-child(5)
+        {
+          margin-top: 4em;
+        }
+
+        .role
+        { 
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        .p-name
+        {
+          font-size: 18px;
+          line-height: 27px;    
+        }
+
+        .header-paragraph h6
+        {
+          margin-top: 0px;
+        }
+      }
+
+      footer
+      {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #A9A9A9;
+        margin: 6em 0 4.87em 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-text">
+        <h1>
+          The creative crew
+        </h1>
+      </div>
+      <div class="header-paragraph">
+        <h6>
+          Who we are
+        </h6>
+        <p>
+          We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.
+        </p>
+      </div>  
+    </div>
+    <div class="wrapper">
+      <div class="card">
+        <div class="left-side">
+          <img src="photo1.png" alt="damn">
+          <p class="p-name">Bill Mahoney</p>
+        </div>
+        <div class="right-side">
+          <p class="role">Product owner</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="left-side">
+          <img src="photo2.png" alt="damn">
+          <p class="p-name">Saba Cabrera</p>
+        </div>
+        <div class="right-side">
+          <p class="role">Art Director</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left-side">
+          <img src="photo3.png" alt="damn">
+          <p class="p-name">Shae Le</p>
+        </div>
+        <div class="right-side">
+          <p class="role">Tech Lead</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left-side">
+          <img src="photo4.png" alt="damn">
+          <p class="p-name">Skylah Lu</p>
+        </div>
+        <div class="right-side">
+          <p class="role">UX Designer</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left-side">
+          <img src="photo5.png" alt="damn">
+          <p class="p-name">Griff Richards</p>
+        </div>
+        <div class="right-side">
+          <p class="role">Developer</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left-side">
+          <img src="photo6.png" alt="damn">
+          <p class="p-name">Stan John</p>
+        </div>
+        <div class="right-side">
+          <p class="role">Developer</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <footer>
+      Aymendz46 @ DevChallenges.io
+    </footer>
+
+  </body>
+</html>
